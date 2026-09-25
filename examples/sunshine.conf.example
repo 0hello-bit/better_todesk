@@ -1,0 +1,7 @@
+# 示例配置，仅用于说明字段位置。
+# 不要把真实 sunshine.conf、证书或 sunshine_state.json 复制到仓库。
+
+# adapter = your-display-adapter
+# output_name = your-display-output
+# encoder = nvenc
+# min_log_level = info

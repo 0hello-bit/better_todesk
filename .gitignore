@@ -1,0 +1,17 @@
+# Local credentials and runtime state
+*.pem
+*.key
+*.p12
+*.log
+sunshine_state.json
+sunshine.conf
+credentials/
+.env
+.env.*
+
+# Local/editor/build output
+.vscode/
+.idea/
+dist/
+node_modules/
+__pycache__/

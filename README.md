@@ -14,6 +14,12 @@
 
 “几乎无延迟”是个人体验，不是端到端延迟测量；仓库没有把它写成 0 ms 或稳定帧率结论。
 
+2K 指 Moonlight 中选择的档位。此前源显示器采集为 1920 × 1080，尚未独立核实源桌面是否也切到原生 2K。项目名表达个人使用目标，没有与 ToDesk 做性能对照测试。
+
+## 脚本验证范围
+
+开机脚本根据这次实际使用方式整理；Windows 检查脚本是为公开仓库新增的辅助工具。整理版本进行了静态检查，尚未在其他电脑或另一台平板上做完整部署测试。
+
 ## 目录
 
 - [`docs/setup-windows.md`](docs/setup-windows.md)：Windows Sunshine 安装与检查
@@ -21,6 +27,7 @@
 - [`docs/tailscale-moonlight.md`](docs/tailscale-moonlight.md)：Tailscale 下的 Moonlight 连接
 - [`docs/troubleshooting.md`](docs/troubleshooting.md)：常见问题与边界
 - [`docs/experience-log.md`](docs/experience-log.md)：这次折腾的第一人称复盘
+- [`docs/full-retrospective.md`](docs/full-retrospective.md)：网站完整记录，包含安装、双显卡排障、重启证据与快捷键取舍
 - [`scripts/windows/`](scripts/windows/)：Windows 检查脚本
 - [`scripts/android/`](scripts/android/)：Termux 示例脚本
 - [`examples/`](examples/)：脱敏配置示例

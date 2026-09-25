@@ -10,3 +10,5 @@
 4. 用实际画面和输入回传验证串流，而不是只看 ping 是否成功。
 
 Tailscale 能连通不等于端到端画面延迟固定。网络路径、码率、编码器、分辨率和设备温度都会影响结果；不要把一次探测延迟当成串流延迟。
+
+还应检查 Tailscale 访问规则与 Windows 防火墙是否允许对应设备连接，不需要为此开放路由器公网端口。`tailscale status` 或 `tailscale ping <电脑设备名>` 可辅助判断 direct / relay 路径；中继路径可能影响吞吐量。`scripts/windows/check-tailscale.ps1` 会显示本机网络设备和地址，仅供本地诊断，输出分享前要脱敏。

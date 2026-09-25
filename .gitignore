@@ -6,6 +6,15 @@
 sunshine_state.json
 sunshine.conf
 credentials/
+authorized_keys
+known_hosts
+id_*
+*.pub
+*.log.*
+*.bak
+*.exe
+*.apk
+config/
 .env
 .env.*
 

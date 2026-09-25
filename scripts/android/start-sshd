@@ -1,3 +1,11 @@
 #!/data/data/com.termux/files/usr/bin/sh
+set -eu
+export PATH=/data/data/com.termux/files/usr/bin:/system/bin
+boot_log_dir=/data/data/com.termux/files/home/.termux
+mkdir -p "$boot_log_dir"
+exec >> "$boot_log_dir/ssh-boot.log" 2>&1
+date -Iseconds
 termux-wake-lock
-sshd
+if ! pgrep -x sshd >/dev/null; then
+    sshd
+fi

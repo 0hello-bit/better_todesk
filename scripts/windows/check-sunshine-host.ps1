@@ -1,3 +1,4 @@
+#Requires -Version 7.0
 [CmdletBinding()]
 param(
     [string]$InstallRoot = "$env:ProgramFiles\Sunshine",

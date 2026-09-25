@@ -1,0 +1,4 @@
+* text=auto
+*.sh text eol=lf
+scripts/android/* text eol=lf
+examples/termux-boot-start-sshd.example text eol=lf
